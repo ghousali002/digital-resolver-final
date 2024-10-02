@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+// src/App.js
+import React ,{useState,useEffect}from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/Home/HomePage';
+// import Contact from './components/ContactPage/ContactPage';
+// import About from './components/AbooutPage/AboutPage';
+// import Blog from './components/BlogPage/BlogPage';
+// import Portfolio from './components/PortfolioPage/PortfolioPage';
 import './App.css';
 
 function App() {
+  const  [activeNav, setActiveNav] = useState('home');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/contact" element={<Contact activeNav={activeNav} setActiveNav={setActiveNav} />} />
+          <Route path="/about" element={<About activeNav={activeNav} setActiveNav={setActiveNav} />} />
+          <Route path="/blog" element={<Blog activeNav={activeNav} setActiveNav={setActiveNav} />} />
+          <Route path="/portfolio" element={<Portfolio activeNav={activeNav} setActiveNav={setActiveNav} />} /> */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
