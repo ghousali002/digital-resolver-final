@@ -10,11 +10,7 @@ const HomeBusiness = () => {
                         alt="Financial App Interface"
                         
                         className="rounded"
-                        style={{
-                            height:'600px',
-                            height:'600px',
-                            
-                        }}
+                       
                     />
                 </div>
             </div>
