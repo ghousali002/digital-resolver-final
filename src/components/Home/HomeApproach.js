@@ -33,7 +33,7 @@ const HomeApproach = () => {
 
         <div className='flex bg-gray-100 min-h-screen' style={{
             backgroundImage: 'linear-gradient(0deg, #E9E9F9 0.76%, #E1E2FF00 100%)',
-            height:'co'
+           
 
         }}>
 

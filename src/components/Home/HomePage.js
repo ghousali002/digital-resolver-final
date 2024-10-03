@@ -6,6 +6,8 @@ import HomeHero from './HomeHero'
 import HomeBusiness from './HomeBusiness'
 import HomePrice from './HomePrice'
 import HomeApproach from './HomeApproach'
+import HomeNextBusiness from './HomeNextBusiness'
+import CustomerLogos from '../utils/CustomerLogos'
 
 const HomePage = () => {
   return (
@@ -16,6 +18,8 @@ const HomePage = () => {
       <HomeBusiness />
       <HomeApproach />
       <HomePrice />
+      <HomeNextBusiness />
+      <CustomerLogos />
       <Footer />
     </div>
   )
